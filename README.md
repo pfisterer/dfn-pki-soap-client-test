@@ -1,5 +1,7 @@
 # DFN PKI SOAP Client Test
 
+This is work in progress. Use at your own risk.
+
 ## Acknowledgement
 
 Libraries used and included in this repository
