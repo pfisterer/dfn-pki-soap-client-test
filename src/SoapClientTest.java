@@ -11,6 +11,7 @@ public class SoapClientTest {
 	public static void main(String[] args) throws Exception {
 		// Parse command line options
 		CommandLineOptions options = parse(args);
+		System.out.println("Options = " + options);
 		
 		// Create client
 		DFNPKIClient client = new DFNPKIClient(options.caName);
@@ -43,6 +44,13 @@ public class SoapClientTest {
 	    
 		@Option(name="-caname")
 	    String caName = "test-client1-ca";
+		
+		@Override
+		public String toString() {
+			return "CommandLineOptions [raId=" + raId + ", p12File=" + p12File + ", password=" + password + ", caName="
+					+ caName + "]";
+		}
+		
 	}
 	
 	private static CommandLineOptions parse(String[] args) throws CmdLineException {
