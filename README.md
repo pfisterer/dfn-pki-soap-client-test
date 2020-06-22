@@ -23,7 +23,8 @@ You need the following data supplied by the [DFN PKI](https://www.pki.dfn.de/ueb
 Then run
 
 ```bash
-docker run --rm -ti -v "$PWD/private:/data" farberg/dfn-soap-client-test -ra-id 1234 -p12file /data/your-cert.p12 -password your-pw
+docker run --rm -ti -v "$PWD/private:/data" farberg/dfn-soap-client-test \
+	-ra-id 1234 -p12file /data/your-cert.p12 -password your-pw
 ```
 
 ## Acknowledgement
